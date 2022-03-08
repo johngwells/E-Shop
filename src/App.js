@@ -6,7 +6,7 @@ function App() {
     <div className='p-2'>
       <nav className='border mb-4 flex flex-row'>
         <div className='w-full border border-solid'>
-          <h1 className='text-5xl font-Hubballi'>Aperture</h1>
+          <h1 className='text-5xl font-Hubballi text-indigo-700'>Aperture</h1>
         </div>
         <div className='flex items-center p-1 w-full border border-solid'>
           <SearchBar />
