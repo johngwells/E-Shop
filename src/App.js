@@ -1,10 +1,11 @@
 import HomePage from './pages/homepage/Homepage';
 import SearchBar from './components/searchbar/SearchBar';
+import Footer from './pages/footer/footer';
 
 function App() {
   return (
     <div className='p-2'>
-      <nav className='mb-5 flex flex-row'>
+      <nav className='mb-6 flex flex-row'>
         <div className='w-full'>
           <h1 className='text-5xl font-Hubballi text-indigo-700'>Aperture</h1>
         </div>
@@ -26,6 +27,7 @@ function App() {
         </ul>
       </nav>
       <HomePage />
+      <Footer />
     </div>
   );
 }

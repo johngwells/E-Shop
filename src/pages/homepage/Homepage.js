@@ -2,7 +2,7 @@ import Directory from '../../components/directory/directory';
 
 const Homepage = () => {
   return (
-    <div>
+    <div className='h-screen'>
       <Directory />
     </div>
   );
