@@ -1,5 +1,5 @@
 const SearchBar = () => {
-  return <div>Search</div>
+  return <div className="font-Hubballi text-2xl">Search</div>
 }
 
 export default SearchBar;
