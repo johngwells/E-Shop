@@ -1,5 +1,5 @@
-import HomePage from './components/HomePage';
-import SearchBar from './components/SearchBar/SearchBar';
+import HomePage from './pages/homepage/Homepage';
+import SearchBar from './components/searchbar/SearchBar';
 
 function App() {
   return (
@@ -10,6 +10,9 @@ function App() {
         </div>
         <div className='flex items-center p-1 w-full border border-solid'>
           <SearchBar />
+        </div>
+        <div className='flex items-center border border-solid p-1'>
+          <span className="font-Hubballi text-2xl">Signin</span>
         </div>
         <div className='flex items-center border border-solid'>
           <span className="font-Hubballi text-2xl">Cart</span>
