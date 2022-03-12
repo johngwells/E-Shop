@@ -17,7 +17,7 @@ class ShopPage extends React.Component {
     return (
       <>
         <Navigation />
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap mb-16'>
           {collections.map(({ id, ...props }) => (
             <CollectionPreview key={id} {...props} />
           ))}
