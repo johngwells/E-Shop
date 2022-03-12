@@ -17,10 +17,12 @@ class ShopPage extends React.Component {
     return (
       <>
         <Navigation />
-        <div className='flex flex-wrap mb-16'>
-          {collections.map(({ id, ...props }) => (
-            <CollectionPreview key={id} {...props} />
-          ))}
+        <div className='flex justify-center mt-10'>
+          <div className='flex flex-wrap w-11/12 mb-28'>
+            {collections.map(({ id, ...props }) => (
+              <CollectionPreview key={id} {...props} />
+            ))}
+          </div>
         </div>
       </>
     );

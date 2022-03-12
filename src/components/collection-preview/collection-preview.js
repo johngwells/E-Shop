@@ -1,5 +1,5 @@
 const CollectionPreview = ({ title, items }) => (
-  <div className='p-9 w-1/2 border'>
+  <div className='p-4 w-1/2 border'>
     <div className='w-full border'>
       <h1 className='font-Hubballi text-xl'>{title.toUpperCase()}</h1>
       <div className='flex justify-center border'>
