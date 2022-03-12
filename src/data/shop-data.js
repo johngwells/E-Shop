@@ -7,7 +7,7 @@ const SHOP_DATA = [
       {
         id: 1,
         name: 'X-T4',
-        imageUrl: '',
+        imageUrl: 'https://images.unsplash.com/photo-1642424981563-8a1767dfb562?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
         price: 1499
       }
     ]
@@ -20,7 +20,7 @@ const SHOP_DATA = [
       {
         id: 1,
         name: 'A7 IV',
-        imageUrl: '',
+        imageUrl: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
         price: 2499
       }
     ]
@@ -33,7 +33,7 @@ const SHOP_DATA = [
       {
         id: 1,
         name: 'Z fc',
-        imageUrl: '',
+        imageUrl: 'https://images.unsplash.com/photo-1483034695875-9b894c34cecd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80',
         price: 1199
       }
     ]
@@ -45,9 +45,9 @@ const SHOP_DATA = [
     items: [
       {
         id: 1,
-        name: 'EOS M6',
-        imageUrl: '',
-        price: 1099
+        name: 'AE-1',
+        imageUrl: 'https://images.unsplash.com/photo-1487283981457-92340b7c6621?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80',
+        price: 299
       }
     ]
   }
