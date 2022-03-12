@@ -6,7 +6,7 @@ const Navigation = () => (
       <div className='w-full'>
         <h1 className='text-5xl font-Hubballi text-indigo-700'>Aperture</h1>
       </div>
-      <div className='flex mt-3 w-full'>
+      <div className='flex ml-28 mt-3 w-full'>
         <SearchBar />
       </div>
       <div className='flex items-center p-1 mt-2'>
