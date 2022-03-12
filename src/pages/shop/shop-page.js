@@ -15,15 +15,15 @@ class ShopPage extends React.Component {
   render() {
     const { collections } = this.state;
     return (
-      <div className='h-screen'>
-      <Navigation />
-        {
-          collections.map(({ id, ...props }) => (
+      <>
+        <Navigation />
+        <div className='flex flex-wrap'>
+          {collections.map(({ id, ...props }) => (
             <CollectionPreview key={id} {...props} />
-          ))
-        }
-      </div>
-    )
+          ))}
+        </div>
+      </>
+    );
   }
 }
 
