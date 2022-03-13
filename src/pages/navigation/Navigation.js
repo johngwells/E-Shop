@@ -24,8 +24,8 @@ const Navigation = () => (
         <Link to='/shop' className='p-1 font-Hubballi text-xl hover:text-indigo-700'>
           Shop
         </Link>
-        <li className='p-1 font-Hubballi text-xl'>Category</li>
         <li className='p-1 font-Hubballi text-xl'>Brands</li>
+        {/* <li className='p-1 font-Hubballi text-xl'>Category</li> */}
       </ul>
     </nav>
   </>
