@@ -14,8 +14,8 @@ class ShopPage extends React.Component {
   render() {
     const { collections } = this.state;
     return (
-      <div className='flex justify-center -mt-1'>
-        <div className='flex flex-wrap mb-32 p-5'>
+      <div className='-mt-1 flex justify-center'>
+        <div className='mb-32 flex flex-wrap p-5'>
           {collections.map(({ id, ...props }) => (
             <CollectionPreview key={id} {...props} />
           ))}

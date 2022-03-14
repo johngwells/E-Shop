@@ -46,10 +46,7 @@ class Directory extends React.Component {
     return (
       <div className='flex flex-wrap p-5'>
         {this.state.sections.map(({ id, ...props }) => (
-          <MenuItem
-            key={id}
-            {...props}
-          />
+          <MenuItem key={id} {...props} />
         ))}
       </div>
     );

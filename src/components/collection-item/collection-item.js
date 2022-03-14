@@ -1,11 +1,14 @@
 const CollectionItem = ({ name, imageUrl, price }) => (
-  <div className='p-1 w-full h-72 flex flex-col justify-center -mt-4 relative'>
-    <img src={imageUrl} className='w-auto h-auto max-h-60 overflow-hidden rounded-sm' />
+  <div className='relative -mt-4 flex h-72 w-full flex-col justify-center p-1'>
+    <img
+      src={imageUrl}
+      className='h-auto max-h-60 w-auto overflow-hidden rounded-sm'
+    />
     <div className='flex flex-row justify-around'>
-      <span className='font-Hubballi p-1 w-11/12'>{name}</span>
-      <span className='font-Hubballi p-1'>${price}</span>
+      <span className='w-11/12 p-1 font-Hubballi'>{name}</span>
+      <span className='p-1 font-Hubballi'>${price}</span>
     </div>
-    <button className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-slate-200 opacity-70 rounded-md w-24 h-8'>
+    <button className='absolute top-1/2 left-1/2 h-8 w-24 -translate-y-1/2 -translate-x-1/2 rounded-md bg-slate-200 opacity-70'>
       Add to cart
     </button>
   </div>

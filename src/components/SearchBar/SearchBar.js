@@ -4,13 +4,13 @@ const SearchBar = () => {
       <div class='input-group relative flex flex-row items-stretch rounded'>
         <input
           type='search'
-          class='form-control relative flex-auto min-w-0 block w-full px-3 py-1 text-xl font-Hubballi font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-indigo-600 focus:outline-none'
+          class='form-control relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1 font-Hubballi text-xl font-normal text-gray-700 transition ease-in-out focus:border-indigo-600 focus:bg-white focus:text-gray-700 focus:outline-none'
           placeholder='Shop for used & new camera gear...'
           aria-label='Search'
           aria-describedby='button-addon2'
         />
         <span
-          class='input-group-text flex items-center px-3 py-1 text-base font-normal text-gray-700 text-center whitespace-nowrap rounded -mr-24'
+          class='input-group-text -mr-24 flex items-center whitespace-nowrap rounded px-3 py-1 text-center text-base font-normal text-gray-700'
           id='basic-addon2'
         >
           <svg

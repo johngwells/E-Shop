@@ -2,17 +2,17 @@ import { withRouter } from 'react-router-dom';
 
 const MenuItem = ({ title, subtitle, imageUrl, history, linkUrl, match }) => (
   <div
-    className='w-3/6 h-80 p-1 -mb-2'
+    className='-mb-2 h-80 w-3/6 p-1'
     onClick={() => history.push(`${match.url}${linkUrl}`)}
   >
-    <div className='flex justify-center items-center h-72 rounded-sm overflow-hidden relative group'>
+    <div className='group relative flex h-72 items-center justify-center overflow-hidden rounded-sm'>
       <img
         src={imageUrl}
-        className='object-contain absolute z-10 opacity-90 hover:scale-105 transition duration-700 ease-in-out group-hover:opacity-100'
+        className='absolute z-10 object-contain opacity-90 transition duration-700 ease-in-out hover:scale-105 group-hover:opacity-100'
       />
-      <div className='rounded-md w-32 h-20 flex justify-center items-center flex-col relative z-20 bg-slate-200 opacity-70 group-hover:opacity-100 transition duration-300 cursor-pointer'>
-        <span className='text-4xl font-Hubballi'>{title}</span>
-        <span className='text-2xl italic font-Hubballi'>{subtitle}</span>
+      <div className='relative z-20 flex h-20 w-32 cursor-pointer flex-col items-center justify-center rounded-md bg-slate-200 opacity-70 transition duration-300 group-hover:opacity-100'>
+        <span className='font-Hubballi text-4xl'>{title}</span>
+        <span className='font-Hubballi text-2xl italic'>{subtitle}</span>
       </div>
     </div>
   </div>
