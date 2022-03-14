@@ -1,7 +1,7 @@
 const SearchBar = () => {
   return (
-    <div class='w-8/12'>
-      <div class='input-group relative flex flex-row items-stretch w-full  rounded'>
+    <div class='w-10/12'>
+      <div class='input-group relative flex flex-row items-stretch rounded'>
         <input
           type='search'
           class='form-control relative flex-auto min-w-0 block w-full px-3 py-1 text-xl font-Hubballi font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-indigo-600 focus:outline-none'
@@ -10,7 +10,7 @@ const SearchBar = () => {
           aria-describedby='button-addon2'
         />
         <span
-          class='input-group-text flex items-center px-3 py-1 text-base font-normal text-gray-700 text-center whitespace-nowrap rounded'
+          class='input-group-text flex items-center px-3 py-1 text-base font-normal text-gray-700 text-center whitespace-nowrap rounded -mr-24'
           id='basic-addon2'
         >
           <svg
