@@ -1,5 +1,5 @@
 Buy & sell New / Used camera gear.
-![Aperture](https://user-images.githubusercontent.com/25935796/158035923-e027b8aa-2cec-4e80-9207-5c249191f0fb.png)
+![Aperture](https://user-images.githubusercontent.com/25935796/158088491-54a0b3b4-b023-4fa0-9b53-eabb66f5dfa2.png)
 
 # Getting Started with Create React App
 

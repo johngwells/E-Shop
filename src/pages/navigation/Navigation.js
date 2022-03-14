@@ -26,7 +26,7 @@ const Navigation = () => (
           Sell Your Gear
         </button>
       </div>
-      <div className='mr-6 flex flex-row w-40'>
+      <div className='mr-6 flex flex-row w-48'>
         <div className='flex items-center p-1 mt-1 ml-4'>
           <span className='font-Hubballi text-xl'>Log In</span>
         </div>
