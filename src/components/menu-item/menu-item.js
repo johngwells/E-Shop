@@ -10,7 +10,7 @@ const MenuItem = ({ title, subtitle, imageUrl, history, linkUrl, match }) => (
         src={imageUrl}
         className='absolute z-10 object-contain opacity-90 transition duration-700 ease-in-out group-hover:scale-105 group-hover:opacity-100'
       />
-      <div className='btn glass relative z-20 flex h-20 w-40 cursor-pointer flex-col items-center justify-center rounded-md text-neutral transition duration-300 hover:text-neutral-focus'>
+      <div className='btn glass relative z-20 flex h-20 w-40 cursor-pointer flex-col items-center justify-center rounded-md text-neutral-content transition duration-300 hover:bg-opacity-90'>
         <span className='font-Hubballi text-4xl'>{title}</span>
         <span className='font-Hubballi text-2xl italic'>{subtitle}</span>
       </div>

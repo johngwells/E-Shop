@@ -1,6 +1,5 @@
 import SearchBar from '../../components/searchbar/SearchBar';
 import { Link } from 'react-router-dom';
-import CartIcon from '../../components/cart-icon/cart-icon';
 
 const Navigation = () => (
   <>
@@ -12,7 +11,7 @@ const Navigation = () => (
               src='static/polaroid.svg'
               className='mr-1 mt-1 h-8 w-8 rounded-md bg-primary'
             />
-            <h1 className='font-Hubballi text-5xl'>Aperture</h1>
+            <h1 className='font-Hubballi text-5xl'><span className='text-primary'>@</span>perture</h1>
           </div>
         </Link>
       </div>
@@ -21,21 +20,20 @@ const Navigation = () => (
       </div>
       <div className='mr-14 ml-6 flex w-8/12 justify-between'>
         <div className='mt-1 flex w-40 items-center'>
-          <button type='button' class='btn btn-outline btn-accent btn-sm h-10'>
+          <button type='button' class='btn btn-accent btn-outline btn-sm h-10'>
             Sell Your Gear
           </button>
         </div>
         <div className='flex flex-row'>
           <div className='mt-1 flex items-center p-1'>
             <Link to='/signin'>
-              <span className='link link-hover link-neutral font-Hubballi text-xl'>
+              <span className='link link-hover font-Hubballi text-xl'>
                 Log In
               </span>
             </Link>
           </div>
           <div className='flex items-center p-1'>
             <img src='static/shopping-cart.svg' className='h-8 w-8' />
-            {/* <CartIcon /> */}
           </div>
         </div>
       </div>
@@ -48,7 +46,6 @@ const Navigation = () => (
         >
           Shop
         </Link>
-        {/* <li className='p-1 font-Hubballi text-xl'>Brands</li> */}
       </ul>
     </nav>
   </>
