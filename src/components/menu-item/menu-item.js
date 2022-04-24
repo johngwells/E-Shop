@@ -1,9 +1,9 @@
-import { withRouter } from 'react-router-dom';
+import { withRouter } from '../../utils/withRouter';
 
 const MenuItem = ({ title, subtitle, imageUrl, history, linkUrl, match }) => (
   <div
     className='-mb-2 h-80 w-3/6 p-1'
-    onClick={() => history.push(`${match.url}${linkUrl}`)}
+    // onClick={() => history.push(`${match.url}${linkUrl}`)}
   >
     <div className='group relative flex h-72 items-center justify-center overflow-hidden rounded-sm'>
       <img

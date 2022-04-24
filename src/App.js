@@ -1,4 +1,4 @@
-import { Switch, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import HomePage from './pages/homepage/Homepage';
 import Footer from './pages/footer/footer';
@@ -10,11 +10,11 @@ function App() {
   return (
     <div className='p-2'>
       <Navigation />
-      <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route path='/shop' component={ShopPage} />
-        <Route path='/signin' component={SignIn} />
-      </Switch>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/shop' element={<ShopPage />} />
+        <Route path='/signin' element={<SignIn />} />
+      </Routes>
       <Footer />
     </div>
   );

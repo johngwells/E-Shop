@@ -20,7 +20,7 @@ const Navigation = () => (
       </div>
       <div className='mr-14 ml-6 flex w-8/12 justify-between'>
         <div className='mt-1 flex w-40 items-center'>
-          <button type='button' class='btn btn-accent btn-outline btn-sm h-10'>
+          <button type='button' className='btn btn-accent btn-outline btn-sm h-10'>
             Sell Your Gear
           </button>
         </div>
