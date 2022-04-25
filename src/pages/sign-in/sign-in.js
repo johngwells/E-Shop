@@ -1,4 +1,5 @@
 import { signInWithGooglePopup, createUserDocumentAuth } from "../../utils/firebase/firebase.utils";
+import SignUpForm from '../../components/sign-up-form/sign-up-form';
 
 const SignIn = () => {
   const logGoogleUser = async () => {
@@ -16,9 +17,10 @@ const SignIn = () => {
           <h3 className='text-lg font-bold'>
             Register
           </h3>
-          <p className='py-4'>
+          {/* <p className='py-4'>
             Register form here
-          </p>
+          </p> */}
+          <SignUpForm />
           <div className='modal-action'>
             <label htmlFor='my-modal' className='btn' onClick={logGoogleUser}>
               Register

@@ -27,6 +27,9 @@ provider.setCustomParameters({
 export const auth = getAuth();
 export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
 
+// redirect will require useEffect in signin page. Because the app unmounts when leaving the page and loses everything in memory
+export const signInWithGoogleRedirect = () => signInWithRedirect(auth, provider);
+
 export const db = getFirestore();
 
 export const createUserDocumentAuth = async userAuth => {
