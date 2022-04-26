@@ -64,53 +64,55 @@ const SignUpForm = () => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <div className='form-control'>
-        <label className='input-group' />
-        <span>Display Name</span>
-        <input
-          type='text'
-          required
-          placeholder='Your Name'
-          className='input input-bordered'
-          onChange={handleChange}
-          name='displayName'
-          value={displayName}
-        />
-        <span>Email</span>
-        <input
-          type='email'
-          required
-          placeholder='info@site.com'
-          className='input input-bordered'
-          onChange={handleChange}
-          name='email'
-          value={email}
-        />
-        <span>Password</span>
-        <input
-          type='password'
-          placeholder='your password'
-          className='input input-bordered'
-          onChange={handleChange}
-          name='password'
-          value={password}
-        />
-        {error ? <div>{error}</div> : <></>}
-        <span>Confirm Password</span>
-        <input
-          type='password'
-          placeholder='confirm password'
-          className='input input-bordered'
-          onChange={handleChange}
-          name='confirmPassword'
-          value={confirmPassword}
-        />
-        {passwordMatchError ? <>{passwordMatchError}</> : <></>}
+    <form onSubmit={onSubmit} className='flex h-screen justify-center '>
+      <div className='flex flex-col'>
+        <div className='form-control w-72 mt-32'>
+          <label className='input-group' />
+          <span>Display Name</span>
+          <input
+            type='text'
+            required
+            placeholder='Your Name'
+            className='input input-bordered'
+            onChange={handleChange}
+            name='displayName'
+            value={displayName}
+          />
+          <span>Email</span>
+          <input
+            type='email'
+            required
+            placeholder='info@site.com'
+            className='input input-bordered'
+            onChange={handleChange}
+            name='email'
+            value={email}
+          />
+          <span>Password</span>
+          <input
+            type='password'
+            placeholder='your password'
+            className='input input-bordered'
+            onChange={handleChange}
+            name='password'
+            value={password}
+          />
+          {error ? <div>{error}</div> : <></>}
+          <span>Confirm Password</span>
+          <input
+            type='password'
+            placeholder='confirm password'
+            className='input input-bordered'
+            onChange={handleChange}
+            name='confirmPassword'
+            value={confirmPassword}
+          />
+          {passwordMatchError ? <>{passwordMatchError}</> : <></>}
+        </div>
+        <button type='submit' className='btn w-72' disabled={submitDisabled}>
+          Register
+        </button>
       </div>
-      <button type='submit' className='btn' disabled={submitDisabled}>
-        Register
-      </button>
     </form>
   );
 };
