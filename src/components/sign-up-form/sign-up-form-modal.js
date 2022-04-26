@@ -14,20 +14,15 @@ const defaultFormFields = {
 
 const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
-  const [error, setError] = useState('');
-  const [passwordMatchError, setPasswordMatchError] = useState('');
   const { displayName, email, password, confirmPassword, submitDisabled } =
     formFields;
 
   console.log(formFields);
 
   const handleChange = e => {
-    setError('');
-    setPasswordMatchError('');
-
     let textValid = e.target.value ? true : false;
     let submitValid =
-      displayName && email && password.length && confirmPassword && textValid;
+      displayName && email && password && confirmPassword && textValid;
     const { name, value } = e.target;
 
     setFormFields({
@@ -43,24 +38,20 @@ const SignUpForm = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    if (password !== confirmPassword) {
-      setPasswordMatchError('Passwords must match');
-    }
+    if (password !== confirmPassword) return;
 
-    if (password.length < 6) {
-      setError('Password must be 6 characters or greater');
-    }
-
-    try {
-      const { user } = await createAuthUserWithEmailAndPassword(
-        email,
-        password
-      );
-      await createUserDocumentAuth(user, { displayName });
-      resetFormFields();
-    } catch (err) {
-      console.log('error', err);
-    }
+    // if (!submitDisabled) {
+      try {
+        const { user } = await createAuthUserWithEmailAndPassword(
+          email,
+          password
+        );
+        await createUserDocumentAuth(user, { displayName });
+        resetFormFields();
+      } catch (err) {
+        console.log('error', err);
+      }
+    // }
   };
 
   return (
@@ -96,7 +87,6 @@ const SignUpForm = () => {
           name='password'
           value={password}
         />
-        {error ? <div>{error}</div> : <></>}
         <span>Confirm Password</span>
         <input
           type='password'
@@ -106,11 +96,15 @@ const SignUpForm = () => {
           name='confirmPassword'
           value={confirmPassword}
         />
-        {passwordMatchError ? <>{passwordMatchError}</> : <></>}
       </div>
-      <button type='submit' className='btn' disabled={submitDisabled}>
-        Register
-      </button>
+
+      {/* <div className='modal-action'>
+        <button id='my-modal'> */}
+          <button type='submit' htmlFor='my-modal' className='btn' disabled={submitDisabled}>
+            Register
+          </button>
+        {/* </button>
+      </div> */}
     </form>
   );
 };

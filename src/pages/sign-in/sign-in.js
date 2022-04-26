@@ -6,9 +6,10 @@ const SignIn = () => {
     const { user } = await signInWithGooglePopup();
     const userDocRef = await createUserDocumentAuth(user);
   }
+
   return (
     <>
-      <label htmlFor='my-modal' className='modal-button btn'>
+      {/* <label htmlFor='my-modal' className='modal-button btn'>
         signin modal
       </label>
       <input type='checkbox' id='my-modal' className='modal-toggle' />
@@ -17,9 +18,9 @@ const SignIn = () => {
           <h3 className='text-lg font-bold'>
             Register
           </h3>
-          {/* <p className='py-4'>
+          <p className='py-4'>
             Register form here
-          </p> */}
+          </p>
           <SignUpForm />
           <div className='modal-action'>
             <label htmlFor='my-modal' className='btn' onClick={logGoogleUser}>
@@ -27,6 +28,9 @@ const SignIn = () => {
             </label>
           </div>
         </div>
+      </div> */}
+      <div>
+        <SignUpForm />
       </div>
     </>
   );
