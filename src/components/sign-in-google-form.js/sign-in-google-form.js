@@ -86,11 +86,18 @@ const SignInGoogleForm = () => {
           />
           {error ? <div>{error}</div> : <></>}
         </div>
-        <div className='flex flex-row mt-4'>
-          <button type='submit' className='btn w-36 font-Hubballi text-xl' disabled={submitDisabled}>
+        <div className='mt-4 flex flex-row'>
+          <button
+            type='submit'
+            className='btn w-36 font-Hubballi text-xl'
+            disabled={submitDisabled}
+          >
             Sign In
           </button>
-          <button onClick={signInWithGoogle} className='btn w-36 font-Hubballi text-xl'>
+          <button
+            onClick={signInWithGoogle}
+            className='btn w-36 font-Hubballi text-xl'
+          >
             Google
           </button>
         </div>

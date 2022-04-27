@@ -1,17 +1,20 @@
-import { signInWithGooglePopup, createUserDocumentAuth } from "../../utils/firebase/firebase.utils";
+import {
+  signInWithGooglePopup,
+  createUserDocumentAuth
+} from '../../utils/firebase/firebase.utils';
 import SignUpForm from '../../components/sign-up-form/sign-up-form';
-import SignInGoogleForm from "../../components/sign-in-google-form.js/sign-in-google-form";
+import SignInGoogleForm from '../../components/sign-in-google-form.js/sign-in-google-form';
 
 const SignIn = () => {
   const logGoogleUser = async () => {
     const { user } = await signInWithGooglePopup();
     const userDocRef = await createUserDocumentAuth(user);
-  }
+  };
 
   return (
-    <div className="flex justify-center">
-    <div className="w-4/6">
-      {/* <label htmlFor='my-modal' className='modal-button btn'>
+    <div className='flex justify-center'>
+      <div className='w-4/6'>
+        {/* <label htmlFor='my-modal' className='modal-button btn'>
         signin modal
       </label>
       <input type='checkbox' id='my-modal' className='modal-toggle' />
@@ -31,12 +34,11 @@ const SignIn = () => {
           </div>
         </div>
       </div> */}
-      <div className="flex justify-around">
-        <SignInGoogleForm />
-        <SignUpForm />
+        <div className='flex justify-around'>
+          <SignInGoogleForm />
+          <SignUpForm />
+        </div>
       </div>
-    </div>
-
     </div>
   );
 };

@@ -65,7 +65,9 @@ const SignUpForm = () => {
   return (
     <form onSubmit={onSubmit} className='flex h-screen justify-center '>
       <div className='mt-28 flex flex-col'>
-        <h2 className='font-Hubballi text-2xl'><b>Don't have an account?</b></h2>
+        <h2 className='font-Hubballi text-2xl'>
+          <b>Don't have an account?</b>
+        </h2>
         <span className='font-Hubballi'>Sign up with email & password</span>
         <div className='form-control w-72'>
           <label className='input-group mt-4' />
@@ -110,7 +112,11 @@ const SignUpForm = () => {
           />
           {passwordMatchError ? <>{passwordMatchError}</> : <></>}
         </div>
-        <button type='submit' className='btn w-72 mt-4 font-Hubballi text-xl' disabled={submitDisabled}>
+        <button
+          type='submit'
+          className='btn mt-4 w-72 font-Hubballi text-xl'
+          disabled={submitDisabled}
+        >
           Sign Up
         </button>
       </div>

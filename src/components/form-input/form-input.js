@@ -2,7 +2,7 @@ const FormInput = ({ label, ...otherProps }) => {
   return (
     <>
       <label className='font-Hubballi'>{label}</label>
-      <input autoComplete="true" {...otherProps} />
+      <input autoComplete='true' {...otherProps} />
     </>
   );
 };
