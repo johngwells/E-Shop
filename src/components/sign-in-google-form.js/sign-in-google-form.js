@@ -15,12 +15,10 @@ const defaultFormFields = {
   submitDisabled: true
 };
 
-const SignUpGoogleForm = () => {
+const SignInGoogleForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const [error, setError] = useState('');
   const { email, password, submitDisabled } = formFields;
-
-  console.log(formFields);
 
   const handleChange = e => {
     setError('');
@@ -47,9 +45,6 @@ const SignUpGoogleForm = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    if (password.length < 6) {
-      setError('Password must be 6 characters or greater');
-    }
 
     try {
       const response = await signInAuthUserWithEmailAndPassword(
@@ -66,8 +61,8 @@ const SignUpGoogleForm = () => {
   return (
     <form onSubmit={onSubmit} className='flex h-screen justify-center '>
       <div className='mt-28 flex flex-col'>
-        <h2>Already have an account?</h2>
-        <span>Sign in with email & password</span>
+        <h2 className='font-Hubballi text-2xl'>Already have an account?</h2>
+        <span className='font-Hubballi'>Sign in with email & password</span>
         <div className='form-control w-72'>
           <label className='input-group mt-4' />
           <FormInput
@@ -91,11 +86,11 @@ const SignUpGoogleForm = () => {
           />
           {error ? <div>{error}</div> : <></>}
         </div>
-        <div className='flex flex-row'>
-          <button type='submit' className='btn w-36' disabled={submitDisabled}>
+        <div className='flex flex-row mt-4'>
+          <button type='submit' className='btn w-36 font-Hubballi text-xl' disabled={submitDisabled}>
             Sign In
           </button>
-          <button onClick={signInWithGoogle} className='btn w-36'>
+          <button onClick={signInWithGoogle} className='btn w-36 font-Hubballi text-xl'>
             Google
           </button>
         </div>
@@ -104,4 +99,4 @@ const SignUpGoogleForm = () => {
   );
 };
 
-export default SignUpGoogleForm;
+export default SignInGoogleForm;

@@ -20,8 +20,6 @@ const SignUpForm = () => {
   const { displayName, email, password, confirmPassword, submitDisabled } =
     formFields;
 
-  console.log(formFields);
-
   const handleChange = e => {
     setError('');
     setPasswordMatchError('');
@@ -66,9 +64,9 @@ const SignUpForm = () => {
 
   return (
     <form onSubmit={onSubmit} className='flex h-screen justify-center '>
-      <div className='flex flex-col mt-28'>
-      <h2>Don't have an account?</h2>
-      <span>Sign up with email & password</span>
+      <div className='mt-28 flex flex-col'>
+        <h2 className='font-Hubballi text-2xl'><b>Don't have an account?</b></h2>
+        <span className='font-Hubballi'>Sign up with email & password</span>
         <div className='form-control w-72'>
           <label className='input-group mt-4' />
           <FormInput
@@ -82,7 +80,7 @@ const SignUpForm = () => {
             value={displayName}
           />
           <FormInput
-          label='Email'
+            label='Email'
             type='email'
             required
             placeholder='info@site.com'
@@ -112,7 +110,7 @@ const SignUpForm = () => {
           />
           {passwordMatchError ? <>{passwordMatchError}</> : <></>}
         </div>
-        <button type='submit' className='btn w-72' disabled={submitDisabled}>
+        <button type='submit' className='btn w-72 mt-4 font-Hubballi text-xl' disabled={submitDisabled}>
           Sign Up
         </button>
       </div>

@@ -1,8 +1,8 @@
 const FormInput = ({ label, ...otherProps }) => {
   return (
     <>
-      <label>{label}</label>
-      <input {...otherProps} />
+      <label className='font-Hubballi'>{label}</label>
+      <input autoComplete="true" {...otherProps} />
     </>
   );
 };
