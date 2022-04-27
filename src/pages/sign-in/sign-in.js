@@ -9,7 +9,8 @@ const SignIn = () => {
   }
 
   return (
-    <>
+    <div className="flex justify-center">
+    <div className="w-4/6">
       {/* <label htmlFor='my-modal' className='modal-button btn'>
         signin modal
       </label>
@@ -30,11 +31,13 @@ const SignIn = () => {
           </div>
         </div>
       </div> */}
-      <div className="flex flex-row justify-around">
+      <div className="flex justify-around">
         <SignInGoogleForm />
         <SignUpForm />
       </div>
-    </>
+    </div>
+
+    </div>
   );
 };
 
