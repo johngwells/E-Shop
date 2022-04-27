@@ -1,5 +1,6 @@
 import { signInWithGooglePopup, createUserDocumentAuth } from "../../utils/firebase/firebase.utils";
 import SignUpForm from '../../components/sign-up-form/sign-up-form';
+import SignUpGoogleForm from "../../components/sign-up-google-form.js/sign-up-google-form";
 
 const SignIn = () => {
   const logGoogleUser = async () => {
@@ -29,7 +30,8 @@ const SignIn = () => {
           </div>
         </div>
       </div> */}
-      <div>
+      <div className="flex flex-row justify-around">
+        <SignUpGoogleForm />
         <SignUpForm />
       </div>
     </>
