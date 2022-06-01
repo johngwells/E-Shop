@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 
-import HomePage from './pages/homepage/Homepage';
+import HomePage from './pages/homepage/homepage';
 import Footer from './pages/footer/footer';
 import ShopPage from './pages/shop/shop-page';
-import Navigation from './pages/navigation/Navigation';
+import Navigation from './pages/navigation/navigation';
 import SignIn from './pages/sign-in/sign-in';
 
 function App() {
