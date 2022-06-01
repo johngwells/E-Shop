@@ -1,15 +1,15 @@
 import {
-  signInWithGooglePopup,
-  createUserDocumentAuth
+  // signInWithGooglePopup,
+  // createUserDocumentAuth
 } from '../../utils/firebase/firebase.utils';
 import SignUpForm from '../../components/sign-up-form/sign-up-form';
 import SignInGoogleForm from '../../components/sign-in-google-form.js/sign-in-google-form';
 
 const SignIn = () => {
-  const logGoogleUser = async () => {
-    const { user } = await signInWithGooglePopup();
-    const userDocRef = await createUserDocumentAuth(user);
-  };
+  // const logGoogleUser = async () => {
+  //   const { user } = await signInWithGooglePopup();
+  //   const userDocRef = await createUserDocumentAuth(user);
+  // };
 
   return (
     <div className='flex justify-center'>

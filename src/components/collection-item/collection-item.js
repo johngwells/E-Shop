@@ -3,6 +3,7 @@ const CollectionItem = ({ name, imageUrl, price }) => (
     <img
       src={imageUrl}
       className='h-auto max-h-60 w-auto overflow-hidden rounded-sm'
+      alt={name}
     />
     <div className='flex flex-row justify-around'>
       <span className='w-11/12 p-1 font-Hubballi'>{name}</span>

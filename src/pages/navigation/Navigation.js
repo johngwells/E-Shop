@@ -1,4 +1,4 @@
-import SearchBar from '../../components/searchbar/SearchBar';
+import SearchBar from '../../components/searchBar/searchBar';
 import { Link } from 'react-router-dom';
 
 const Navigation = () => (
@@ -10,6 +10,7 @@ const Navigation = () => (
             <img
               src='static/polaroid.svg'
               className='mr-1 mt-1 h-8 w-8 rounded-md bg-primary'
+              alt='camera'
             />
             <h1 className='font-Hubballi text-5xl'><span className='text-primary'>@</span>perture</h1>
           </div>
@@ -33,7 +34,7 @@ const Navigation = () => (
             </Link>
           </div>
           <div className='flex items-center p-1'>
-            <img src='static/shopping-cart.svg' className='h-8 w-8' />
+            <img src='static/shopping-cart.svg' className='h-8 w-8' alt='shopping cart' />
           </div>
         </div>
       </div>
