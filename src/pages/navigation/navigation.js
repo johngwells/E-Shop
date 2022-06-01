@@ -16,9 +16,9 @@ const Navigation = () => (
           </div>
         </Link>
       </div>
-      {/* <div className='mt-2 ml-10 w-full'>
+      <div className='mt-2 ml-10 w-full'>
         <SearchBar />
-      </div> */}
+      </div>
       <div className='mr-14 ml-6 flex w-8/12 justify-between'>
         <div className='mt-1 flex w-40 items-center'>
           <button type='button' className='btn btn-accent btn-outline btn-sm h-10'>
