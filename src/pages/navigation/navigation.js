@@ -12,7 +12,9 @@ const Navigation = () => (
               className='mr-1 mt-1 h-8 w-8 rounded-md bg-primary'
               alt='camera'
             />
-            <h1 className='font-Hubballi text-5xl'><span className='text-primary'>@</span>perture</h1>
+            <h1 className='font-Hubballi text-5xl'>
+              <span className='text-primary'>@</span>perture
+            </h1>
           </div>
         </Link>
       </div>
@@ -22,9 +24,12 @@ const Navigation = () => (
       <div className='mr-14 ml-6 flex w-8/12 justify-between'>
         <div className='mt-1 flex w-40 items-center'>
           <Link to='signin'>
-          <button type='button' className='btn btn-accent btn-outline btn-sm h-10'>
-            Sell Your Gear
-          </button>
+            <button
+              type='button'
+              className='btn btn-outline btn-accent btn-sm h-10'
+            >
+              Sell Your Gear
+            </button>
           </Link>
         </div>
         <div className='flex flex-row'>
@@ -36,7 +41,11 @@ const Navigation = () => (
             </Link>
           </div>
           <div className='flex items-center p-1'>
-            <img src='static/shopping-cart.svg' className='h-8 w-8' alt='shopping cart' />
+            <img
+              src='static/shopping-cart.svg'
+              className='h-8 w-8'
+              alt='shopping cart'
+            />
           </div>
         </div>
       </div>

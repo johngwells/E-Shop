@@ -1,4 +1,5 @@
 import { withRouter } from '../../utils/withRouter';
+import { Link } from 'react-router-dom';
 
 const MenuItem = ({ title, subtitle, imageUrl, history, linkUrl, match }) => (
   <div
@@ -11,10 +12,12 @@ const MenuItem = ({ title, subtitle, imageUrl, history, linkUrl, match }) => (
         className='absolute z-10 object-contain opacity-90 transition duration-700 ease-in-out group-hover:scale-105 group-hover:opacity-100'
         alt={title}
       />
-      <div className='btn glass relative z-20 flex h-20 w-40 cursor-pointer flex-col items-center justify-center rounded-md text-neutral-content transition duration-600 hover:bg-opacity-90'>
-        <span className='font-Hubballi text-4xl'>{title}</span>
-        <span className='font-Hubballi text-2xl italic'>{subtitle}</span>
-      </div>
+      <Link to='shop'>
+        <div className='duration-600 btn glass relative z-20 flex h-20 w-40 cursor-pointer flex-col items-center justify-center rounded-md text-neutral-content transition hover:bg-opacity-90'>
+          <span className='font-Hubballi text-4xl'>{title}</span>
+          <span className='font-Hubballi text-2xl italic'>{subtitle}</span>
+        </div>
+      </Link>
     </div>
   </div>
 );
