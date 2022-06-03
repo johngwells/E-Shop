@@ -21,9 +21,11 @@ const Navigation = () => (
       </div>
       <div className='mr-14 ml-6 flex w-8/12 justify-between'>
         <div className='mt-1 flex w-40 items-center'>
+          <Link to='signin'>
           <button type='button' className='btn btn-accent btn-outline btn-sm h-10'>
             Sell Your Gear
           </button>
+          </Link>
         </div>
         <div className='flex flex-row'>
           <div className='mt-1 flex items-center p-1'>
