@@ -11,7 +11,7 @@ const CollectionItem = ({ name, imageUrl, price }) => (
     </div>
     <div>
       <div className='invisible absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 group-hover:visible'>
-        <button className='btn btn-accent btn-xs h-8 w-28 rounded-md px-0  opacity-70 hover:opacity-90'>
+        <button className='btn btn-accent btn-xs h-8 w-28 rounded-md px-0 opacity-70 hover:opacity-90'>
           Add to cart
         </button>
       </div>
