@@ -54,7 +54,16 @@ const SignInGoogleForm = () => {
       console.log(response);
       resetFormFields();
     } catch (err) {
-      console.log('error', err);
+      switch (err.code) {
+        case 'auth/wrong-password':
+          alert('incorrect password for email');
+          break;
+        case 'auth/user-not-found':
+          alert('no user associated with this email');
+          break;
+        default:
+          console.log(err);
+      }
     }
   };
 
@@ -95,6 +104,7 @@ const SignInGoogleForm = () => {
             Sign In
           </button>
           <button
+            type='button'
             onClick={signInWithGoogle}
             className='btn w-36 font-Hubballi text-xl'
           >
